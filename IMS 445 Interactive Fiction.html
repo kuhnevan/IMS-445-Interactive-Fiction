@@ -1,0 +1,38 @@
+<tw-storydata name="IMS 445 Interactive Fiction" startnode="1" creator="Twine" creator-version="2.2.1" ifid="2491F5F0-D884-44E3-AEF1-CD680312AA97" zoom="1" format="Harlowe" format-version="2.1.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar {
+  display: none;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">function wait(ms)
+{
+var d = new Date();
+var d2 = null;
+do { d2 = new Date(); }
+while(d2-d < ms);
+}
+
+</script><tw-passagedata pid="1" name="Yes" tags="" position="385,24.5" size="100,100">
+
+
+This is a test
+
+
+|Continue&gt;[ [[Continue]] ]
+
+|more&gt;[]
+
+(live: 4s) [
+	(replace: ?more) [You&#39;d better choose soon...]
+	(stop:)
+]
+
+(live: 8s) [
+		(replace: ?continue) [You waited too long.]
+		[[Accept Defeat]] 
+		(stop:)
+]
+</tw-passagedata><tw-passagedata pid="2" name="Accept Defeat" tags="" position="199,30.5" size="100,100">Game over. Would you like to try again?
+
+[[Yes]]
+
+[[No]]</tw-passagedata><tw-passagedata pid="3" name="Continue" tags="" position="565,344.5" size="100,100">You continued. Good job.</tw-passagedata><tw-passagedata pid="4" name="No" tags="" position="39,29.5" size="100,100">Very well. Goodbye.
+
+
+(link: &quot;Quit&quot;)[&lt;script&gt;window.close()&lt;/script&gt;]</tw-passagedata></tw-storydata>
